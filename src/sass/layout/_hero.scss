@@ -27,11 +27,32 @@
 }
 .content-main-block {
 }
+
+.content-main-block__body {
+  padding-right: 80px;
+}
 .content-main-block__sub-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.32;
+  color: #ff9900;
+  margin-bottom: 20px;
 }
 .content-main-block__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 1.35;
+  margin-bottom: 20px;
 }
 .content-main-block__text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  color: #31353b;
+  margin-bottom: 45px;
 }
 .content-main-block__form {
 }
@@ -45,6 +66,7 @@
 
 .body-main-block__slider {
   flex: 0 1 50%;
+  min-width: 0;
 }
 
 .partners-main-block {

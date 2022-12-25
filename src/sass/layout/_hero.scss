@@ -204,7 +204,11 @@
     max-width: none;
   }
 }
-
+@media (max-width: 990.98px) {
+  .main-block {
+    padding-bottom: 70px;
+  }
+}
 @media (max-width: 767.98px) {
   .partners-main-block__items {
     justify-content: center;
@@ -219,7 +223,11 @@
   .form-main-block__button {
     width: 100%;
   }
+  .main-block {
+    padding-bottom: 30px;
+  }
 }
+
 @media (max-width: 479.98px) {
   .form-main-block {
     background: #ffffff;

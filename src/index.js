@@ -1,9 +1,4 @@
-// import Swiper JS
 import Swiper from 'swiper/swiper-bundle';
-// // import Swiper styles
-// import 'swiper/css';
-
-// import 'simplelightbox/dist/simple-lightbox.min.css';
 import 'swiper/swiper-bundle.min.css';
 
 const swiper = new Swiper('.slider-main-block', {
@@ -15,4 +10,27 @@ const swiper = new Swiper('.slider-main-block', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
+
+// Таби
+const tabNavItems = document.querySelectorAll('.tabs-deals__button');
+const tabItems = document.querySelectorAll('.item-tabs');
+document.addEventListener('click', function (e) {
+  const targetElement = e.target;
+  let currentActiveIndex = null;
+  let newActiveIndex = null;
+  if (targetElement.closest('.tabs-deals__button')) {
+    tabNavItems.forEach((tabNavItem, index) => {
+      if (tabNavItem.classList.contains('active')) {
+        currentActiveIndex = index;
+        tabNavItem.classList.remove('active');
+      }
+      if (tabNavItem === targetElement) {
+        newActiveIndex = index;
+      }
+    });
+    targetElement.classList.add('active');
+    tabItems[currentActiveIndex].classList.remove('active');
+    tabItems[newActiveIndex].classList.add('active');
+  }
 });

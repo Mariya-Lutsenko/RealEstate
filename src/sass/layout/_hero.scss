@@ -103,13 +103,17 @@
   padding: 5px 15px;
   width: 188px;
   flex: 0 0 188px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 17px;
   line-height: 1.35;
   letter-spacing: 0.01em;
+  transition: all 0.3s ease 0s;
   color: #ffffff;
 }
 
+.form-main-block__button:hover {
+  background-color: #d0584b;
+}
 .body-main-block__slider {
   flex: 0 1 50%;
   min-width: 0;
